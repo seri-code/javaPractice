@@ -54,9 +54,10 @@ public class Front {
 			}else if(userData[1].equals("3")){
 				this.display(userData[0]+" X "+userData[2]+" = ");
 				this.display(operation.product(Integer.parseInt(userData[0]), Integer.parseInt(userData[2]))+"");	
-			}else {
+			}else if(userData[1].equals("4")){
 				this.display(userData[0]+" / "+userData[2]+" = ");
 				this.display(operation.division(Integer.parseInt(userData[0]), Integer.parseInt(userData[2]))+"");
+			}else{
 			}
 
 			while(true) {
